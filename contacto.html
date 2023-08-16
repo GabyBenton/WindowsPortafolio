@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gaby Benton | Desarrolladora Web</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./src/img/ic.png">
+    <!--Link de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--Link de Iconos-Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link de Iconos Font-->
+    <!--Link de CSS-->
+    <link rel="stylesheet" href="./src/css/Nav.css">
+    <link rel="stylesheet" href="./src/css/contacto.css">
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+        <!--NavBar-->     
+    </header>
+    <!--Pagina contacto-->
+    <div class="container-contacto">
+      <section class="contacto">
+        <h1 class="text-center">Contacto</h1>
+        <div class="container div-form">
+          <form id="form">
+            <div class="row">
+              <label for="nombre" class="form-label">Nombre:</label>
+              <div class="col">
+                <input type="text" name="nombre" class="form-control" id="nombre" required="obligatorio" placeholder="Nombre" value="">
+              </div>
+            </div>
+            <div class="row">
+              <label for="correo" class="form-label">Email:</label>
+              <div class="col">
+                <input type="email" name="correo" class="form-control" id="correo" required="obligatorio"placeholder="email@example.com" value="">
+              </div>
+            </div>
+            <div class="row">
+              <label for="asunto" class="form-label">Asunto:</label>
+              <div class="col">
+                <input type="text" name="asunto" class="form-control" id="asunto" required="obligatorio" placeholder="Escribe el asunto" value="">
+              </div>
+            </div>
+            <div class="row">
+              <label for="mensaje" class="form-label">Mensaje:</label>
+              <div class="col">
+                <textarea class="form-control" name="mensaje" id="mensaje" rows="3" required="obligatorio" placeholder="Escribe un mensaje"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <button type="submit" class="btn botonEnviar mb-3" id="botonEnviar">Enviar</button>
+              </div>
+              
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!--Footer-->
+    <footer>
+
+    </footer>
+    <!--Script Correo-->
+    <script src="./src/js/email.js"></script>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('q3kvOZQHUVW06EZyu');
+    </script>
+    <!--Script SweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Script NavBar-->
+    <script src="./src/js/nav.js"></script>
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
