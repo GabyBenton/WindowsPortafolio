@@ -1,7 +1,5 @@
 /* Importamos los font que se usarán */
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 *{
@@ -35,9 +33,6 @@ body{
 }
 
 /*Div principal*/
-.inicio{
-  height: 90vh;
-}
 
 .content-inicio{
   padding: 30px;
@@ -61,28 +56,34 @@ footer .col a img{
   padding-right: 4px;
 }
 
-
 /*Footer*/
 .menu{
   height: 10vh;
   width: 100%;
-  background-color: #7f5fff;
+  background-color: #654cc6;
   display: flex;
   align-items: center;
   align-content: center;
+  position: absolute;
+  bottom: 0px;
  
 }
 
 /*boton footer*/
 .btnmenu{
   /* border: 2px solid rgb(128, 41, 234); */
-  box-shadow: 2px 2px 2px 2px rgba(78, 34, 255, 0.4);
+  box-shadow: 2px 2px 2px 2px rgb(39 20 112 / 65%);
   background-color: rgb(160, 150, 245);
   font-size: 22px;
   border-color: #5546dc;
   border-radius: 6px;
   margin: 5px;
   padding:4px 20px;
+}
+
+.btnmenu a{
+  text-decoration: none;
+  color: black;
 }
 
 .btnmenu:hover{

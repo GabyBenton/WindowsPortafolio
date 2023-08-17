@@ -1,0 +1,152 @@
+/* Importamos los font que se usarán */
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+}
+
+/*Pagina inicio, background*/
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(145deg,
+    #6454f3d2,#6b43fe,#b283ff,#d1b5ff);
+    background-size: 400% 400%;
+    animation: animado 7s infinite; 
+}
+
+
+@keyframes animado {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+    
+  }
+
+
+
+/*Menu superior*/
+.superior{
+    width: 100%;
+    background-color: #412cffd2;
+    /* padding: 5px; */
+    /* background: linear-gradient(145deg,
+    #6454f3d2,#6b43fe,#b283ff,#d1b5ff); */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border: 5px solid #654cc6;
+    position: absolute;
+    top: 0px;
+}
+
+.der{
+    text-align: right;
+}
+
+.izq img{
+    margin-left: 15px;
+    width: 25px;
+
+}
+.izq a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+.btn-superior{
+    /* margin: 10px 5px; */
+    width: 24px;
+    background-color: blueviolet;
+    height: 24px;
+    padding: 0;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 0;
+}
+
+.btn-fijo{
+    /* margin: 10px 5px; */
+    margin-right: 10px;
+    width: 24px;
+    background-color: blueviolet;
+    height: 24px;
+    padding: 0;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 0;
+}
+
+.btn img{
+    width: 20px;
+}
+
+.menuBotones{
+    padding: 5px;
+    width: 100%;
+    background-color: #b283ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #654cc6;
+    position: absolute;
+    top: 44px;
+}
+
+.ventana{
+    position: absolute;
+    top: 85px;
+    width: 100%;
+    height: 80vh;
+    border: 5px solid #654cc6;
+    background-color: black;
+}
+
+.ventana p{
+    font-size: 40px;
+    color: white;
+}
+
+.info{
+    padding: 30px 50px;
+}
+
+/*Footer*/
+.menu{
+    height: 10vh;
+    width: 100%;
+    background-color: #654cc6;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    bottom: 0px;
+  }
+  
+  /*boton footer*/
+  .btnmenu{
+    /* border: 2px solid rgb(128, 41, 234); */
+    box-shadow: 2px 2px 2px 2px rgba(78, 34, 255, 0.4);
+    background-color: rgb(160, 150, 245);
+    font-size: 22px;
+    border-color: #5546dc;
+    border-radius: 6px;
+    margin: 5px;
+    padding:4px 20px;
+  }
+  
+  .btnmenu a{
+    text-decoration: none;
+  }
+  .btnmenu:hover{
+    background-color: rgb(174, 166, 243);
+    border-color: #463ab0;
+  }
