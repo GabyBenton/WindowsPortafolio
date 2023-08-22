@@ -1,0 +1,93 @@
+/* Importamos los font que se usarán */
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+}
+
+/*Pagina inicio, background*/
+body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(145deg,
+  #6454f3d2,#6b43fe,#b283ff,#d1b5ff);
+  background-size: 400% 400%;
+  animation: animado 7s infinite; 
+}
+
+@keyframes animado {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+  
+}
+
+/*Div principal*/
+
+.content-inicio{
+  padding: 30px;
+}
+
+.inicio .row .col{
+  margin: 4px;
+  text-align: center;
+}
+
+.inicio .col a{
+  text-decoration: none;
+  color: white;
+}
+
+/*Footer*/
+.menu{
+  height: 10vh;
+  width: 100%;
+  background-color: #654cc6;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  z-index: 100;
+  bottom: 0px;
+ 
+}
+
+/*boton footer*/
+.btnmenu{
+  /* border: 2px solid rgb(128, 41, 234); */
+  box-shadow: 2px 2px 2px 2px rgb(39 20 112 / 65%);
+  background-color: rgb(160, 150, 245);
+  font-size: 22px;
+  border-color: #5546dc;
+  border-radius: 6px;
+  margin: 5px;
+  padding:4px 20px;
+}
+
+.btnmenu a{
+  text-decoration: none;
+  color: black;
+}
+
+.btnmenu:hover{
+  background-color: rgb(174, 166, 243);
+  border-color: #463ab0;
+}
+
+footer .col a{
+  color: black;
+}
+
+footer .col a img{
+  padding-right: 4px;
+}

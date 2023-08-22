@@ -1,7 +1,7 @@
 /* Importamos los font que se usarán */
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
+ 
 *{
   margin: 0;
   padding: 0;
@@ -10,13 +10,15 @@
 }
 
 /*Pagina inicio, background*/
-body{
-  width: 100%;
+.inicio{
+  min-height: 450px;
   height: 100vh;
+  display: flex;
+  background-position: center;
   background: linear-gradient(145deg,
   #6454f3d2,#6b43fe,#b283ff,#d1b5ff);
   background-size: 400% 400%;
-  animation: animado 7s infinite; 
+  animation: animado 7s infinite;
 }
 
 @keyframes animado {
@@ -32,31 +34,50 @@ body{
   
 }
 
-/*Div principal*/
-
 .content-inicio{
-  padding: 30px;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /* margin: 3rem 3rem; */
 }
 
-.inicio .row .col{
-  margin: 4px;
-  text-align: center;
+.col a img{
+  max-width: 100px;
+  width: 50px;
 }
 
-.inicio .col a{
+.col a{
   text-decoration: none;
   color: white;
 }
-
-footer .col a{
-  color: black;
+.col a h3{
+  width: 100px;
 }
 
-footer .col a img{
-  padding-right: 4px;
+.col{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  /* margin: 1rem 1rem; */
+  text-align: center;
 }
 
-/*Footer*/
+.content-inicio .row{
+ 
+  align-items: center;
+}
+
+
+
+
+/*-------Footer-------*/
 .menu{
   height: 10vh;
   width: 100%;
@@ -64,7 +85,8 @@ footer .col a img{
   display: flex;
   align-items: center;
   align-content: center;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   bottom: 0px;
  
 }
@@ -89,4 +111,81 @@ footer .col a img{
 .btnmenu:hover{
   background-color: rgb(174, 166, 243);
   border-color: #463ab0;
+}
+
+footer .col a{
+  color: black;
+}
+
+footer .col a img{
+  padding-right: 4px;
+}
+
+
+
+/*--------Responsividad--------*/
+/*Inicio para celular*/
+
+@media screen and (min-width:220px) and (max-width:767px){
+  .col a img{
+    width: 45px;
+  }
+  .col{
+    margin: 0 15px;
+  }
+  .col a h3{
+    font-size: 15px;
+    width: 45px;
+  }
+  .content-inicio .row{
+    justify-content: center;
+  }
+  /*---footer----*/
+  .menu{
+    height: 15vh;
+  }
+  .btnmenu{
+    font-size: 12px;
+    padding:2px 5px;
+  }
+  .btnmenu img{
+    width: 20px;
+  }
+}
+
+/*Inicio para tablet*/
+@media screen and (min-width:768px) and (max-width:992px){
+  /*---footer----*/
+  .menu{
+    height: 10vh;
+  }
+  .btnmenu{
+    font-size: 20px;
+    padding:4px 20px;
+  }
+  .btnmenu img{
+    width: 25px;
+  }
+ 
+}
+
+/*Inicio para escritorio*/
+@media screen and (min-width:1440px){
+  .col a img{
+    width: 100px;
+  }
+  .col a h3{
+    font-size: 25px;
+    width: 100px;
+  }
+    /*---footer----*/
+  .btnmenu{
+    font-size: 40px;
+    padding:10px 20px;
+
+  }
+  .menu{
+    height: 12vh;
+  }
+
 }

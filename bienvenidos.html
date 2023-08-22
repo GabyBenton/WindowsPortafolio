@@ -33,20 +33,25 @@
                     <a href="./index.html"><button type="button" class="btn btn-superior"><img src="./src/img/equis.png" alt="icono ventana"></button></a>
                 </div>
             </div>
-            <div class="menuBotones">
-                <button type="button" class="btn btn-fijo"><img src="./src/img/ventana.png" alt="icono ventana"></button>
-                <button type="button" class="btn btn-fijo"><img src="./src/img/equis.png" alt="icono ventana"></button>
-                <button type="button" class="btn btn-fijo"><img src="./src/img/equis.png" alt="icono ventana"></button>
-            </div>
-            <div class="ventana">
+            <div class="ventana" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
                 <div class="info">
-                    <p>Microsoft(R) Windows 98</p>
-                    <p>(C)Copyright Microsoft Corp 1981-1999</p>
-                    <p>Hola, yo soy Gaby Benton!</p>
+                    <h2>
+                        Microsoft(R) Windows 98
+                    </h2>
+                    <h2>(C)Copyright Microsoft Corp 1981-1999</h2>
+                    <h1><span id="texto1"> </span></h1>
+                    <h2><span id="texto2">Soy Gaby Benton, una apasionada desarrolladora Front-End elocuente y creativa con interes técnologico. Este espacio es más que un portafolio, es el reflejo de mi esfuerzo, mi ingenio y mi pensar y mi amor por la tecnología.</span></h2>
+                    <h2><span id="texto3">Te invito a explorar mi universo entre etiquetas, líneas de código y funciones que plasman mi escencia.</span></h2>
+                    <h2><span id="texto4">
+                        <img src="" alt="">
+                    </span></h2>
+                    <h2><span id="texto5"> En cada línea de código, en cada pincelada de diseño, y en cada palabra escrita, encontrarás una pieza de mí. Soy un amante de los detalles y un perfeccionista en constante búsqueda de la belleza en cada proyecto que abordo. Me dedico a fusionar la funcionalidad con la estética, creando experiencias que cautivan tanto la mente como el corazón.</span></h2>
+                   <br>
+                   <br>
                 </div>
-            </div>
-      </div>        
-    </section>
+            </div> <!--Div ventana-->
+          </div><!--Div contenido-->       
+        </section><!--Seccion inicio-->
 
     <!--Footer-->
     <footer>
@@ -78,7 +83,12 @@
     </footer>
     <!--Script Botones-links-->
     <script src="./src/js/botones.js"></script>
+
     <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!--Script Libreria animacion-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./src/js/animacionTexto.js"></script>
   </body>
 </html>

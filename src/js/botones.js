@@ -32,75 +32,76 @@ let botones = document.getElementsByClassName("btnmenu");
 
 link1.addEventListener("click", function(event){
     event.preventDefault();
+    // window.open("https://javascript.info/");
     //console.log(link1);
     insert(img1,link1);
-    cambiar(link1);
+   
 });
 link2.addEventListener("click", function(event){
     event.preventDefault();
     //console.log(link1);
     insert(img2,link2);
-    cambiar(link2);
+    
 });
 link3.addEventListener("click", function(event){
     event.preventDefault();
     //console.log(link1);
     insert(img3,link3);
-    cambiar(link3);
+    
 });
 link4.addEventListener("click", function(event){
     event.preventDefault();
     //console.log(link1);
     insert(img4,link4);
-    cambiar(link4);
+    
 });
 link5.addEventListener("click", function(event){
     event.preventDefault();
     //console.log(link1);
     insert(img5,link5);
-    cambiar(link5);
+    
 });
 link6.addEventListener("click", function(event){
     event.preventDefault();
     //console.log(link1);
     insert(img6,link6);
-    cambiar(link6);
+    
 });
 link7.addEventListener("click", function(event){
     event.preventDefault();
     //console.log(link1);
     insert(img7,link7);
-    cambiar(link7);
+    
 });
 link8.addEventListener("click", function(event){
     event.preventDefault();
     //console.log(link1);
     insert(img8,link8);
-    cambiar(link8);
+    
 });
 link9.addEventListener("click", function(event){
     event.preventDefault();
     //console.log(link1);
     insert(img9,link9);
-    cambiar(link9);
+    
 });
 link10.addEventListener("click", function(event){
     event.preventDefault();
     //console.log(link1);
     insert(img10,link10);
-    cambiar(link10);
+    
 });
 link11.addEventListener("click", function(event){
     event.preventDefault();
     //console.log(link1);
     insert(img11,link11);
-    cambiar(link11);
+    
 });
 link12.addEventListener("click", function(event){
     event.preventDefault();
     //console.log(link1);
     insert(img12,link12);
-    cambiar(link12);
+    
 });
 
 let botonInsertado = document.getElementsByClassName("btnmenu");
@@ -108,50 +109,71 @@ function insert(element,ancla){
     console.log(element);
     let atributoI=element.getAttribute("src");
     let texto = ancla.innerText;
-    //let id=1;
+    // let id=1;
     console.log(botones.length);
     console.log(botones);
-    if(botones.length<=4){
 
-        footer_div.insertAdjacentHTML("afterend",`
-    <div class="">    
-        <button class="btnNew btn btnmenu" type="button">
-        <a href="">
-        <img src="${atributoI}" width="25px"> ${texto}
-        </a>
-        </button>
-    </div>
-    `);
-    //id++;
+    if (screen.width < 768){
+        if(botones.length<=4){
+            footer_div.insertAdjacentHTML("afterend",`
+        <div class="">    
+            <button class="btnNew btn btnmenu" type="button">
+            <a href="${creaVinculo(ancla)}">
+            <img src="${atributoI}" width="25px"> ${texto}
+            </a>
+            </button>
+        </div>
+        `);
+        // id++;
+        }
+    }else if(screen.width > 768){
+        if(botones.length<=5){
+            footer_div.insertAdjacentHTML("afterend",`
+        <div class="">    
+            <button class="btnNew btn btnmenu" type="button">
+            <a href="${creaVinculo(ancla)}">
+            <img src="${atributoI}" width="25px"> ${texto}
+            </a>
+            </button>
+        </div>
+        `);
+        // id++;
+        }
     }
+    
     console.log(texto);
     console.log(atributoI);
     console.log(ancla==link1);
-    // document.getElementById("./bienvenidos.html").href = url;
+    //document.getElementById("./bienvenidos.html").href = url;
 }
 
-function cambiar(ancla){
+
+// Esto es para el modal
+// data-bs-toggle="modal" data-bs-target="#${id}"
+
+function creaVinculo(ancla){
     //let atributoH = ancla.getAttribute("href");
     if(ancla==link1){
-        ancla.href="./bienvenidos.html";
+        return "./bienvenidos.html";
      }else if(ancla==link2){
-         ancla.href="./sobremi.html"
+        return "./sobremi.html"
      }else if(ancla==link3){
-         ancla.href="./tecnicas.html"
+        return "./tecnicas.html"
      }else if(ancla==link4){
-         ancla.href="./blandas.html"
+        return "./blandas.html"
      }else if(ancla==link5){
-         ancla.href="./proyecto.html"
+        return "./proyecto.html"
      }else if(ancla==link6){
-         ancla.href="./galeria.html"
+        return "./galeria.html"
      }else if(ancla==link7){
-         ancla.href="./experiencia.html"
+        return "./experiencia.html"
      }else if(ancla==link8){
-         ancla.href="./contacto.html"
+        return "./contacto.html"
      }else if(ancla==link9){
-         ancla.href="./game.html"
+        return "./game.html"
      }
     
 }
-// Esto es para el modal
-// data-bs-toggle="modal" data-bs-target="#${id}"
+
+
+    

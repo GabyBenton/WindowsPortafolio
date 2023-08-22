@@ -68,25 +68,25 @@ function validarDatos(){
 
    /*Nombre*/
    if(nombre.value.length== "" || !isNaN(nombre.value)){
-      nombre.style.border="solid 4px red";
+      nombre.style.border="solid 4px #a025e3";
       errores.push("El nombre no es válido");
       formularioCorrecto=false;
    }
    /*Correo*/
    if(!regexCorreo.test(correo.value)){
-      correo.style.border="solid 4px red";
+      correo.style.border="solid 4px #a025e3";
       errores.push("El correo no es válido");
       formularioCorrecto=false;
    }
    /*Asunto*/
    if(asunto.value.length== ""){
-      asunto.style.border="solid 4px red";
+      asunto.style.border="solid 4px #a025e3";
       errores.push("El asunto no es válido");
       formularioCorrecto=false;
    }
 
    if(mensaje.value=="" || mensaje.length == 0){
-      mensaje.style.border="solid 4px red";
+      mensaje.style.border="solid 4px #a025e3";
       errores.push("El mensaje no es válido");
       formularioCorrecto=false;
    }
