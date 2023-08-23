@@ -97,29 +97,35 @@
   position: absolute;
   top: 43px;
   width: 100%;
-  /* height: 80vh; */
   border: 5px solid #654cc6;
-  background-color: black;
+  background-color: #a590f9;
 }
 
 /*-------Contacto---------*/
 
 .div-form{
-  color: #b283ff;
-  font-size: 24px;
+  color: blueviolet;
+  font-size: 35px;
 }
 
 .ventana h1{
-  color: #b283ff;
-  margin-top:30px;
+  color: blueviolet;
+  font-size: 50px;
+  margin-top:40px;
 }
+.row{
+  margin-top: 20px;
+} 
 
 .botonEnviar{
-  margin-top: 20px;
-  width: 200px;
+  width: 300px;
   color: #fff;
   background-color: #8a49d5;
-  font-size: 20px;
+  font-size: 30px;
+}
+
+.text-center{
+  margin-top: 50px;
 }
 
 .botonEnviar:hover{
@@ -128,8 +134,6 @@
   background-color: #000000;
   border: 2px solid #b283ff;
 }
-
-
 
 
 /*-------Footer---------*/
@@ -175,7 +179,7 @@
 
   /*---footer----*/
   .menu{
-    height: 15vh;
+    height: auto;
   }
   .btnmenu{
     font-size: 12px;
@@ -184,35 +188,72 @@
   .btnmenu img{
     width: 20px;
   }
-
+  .dropdown-menu img{
+    width:18px;
+  }
+  .dropdown-menu{
+    font-size: 12px;
+  }
+/*formulario*/
+  .div-form{
+    font-size: 20px;
+  }  
+  .botonEnviar{
+    width: 200px;
+    font-size: 30px;
+  }
 }
 
 /*Inicio para tablet*/
 @media screen and (min-width:768px) and (max-width:992px){
    /*---footer----*/
   .menu{
-    height: 10vh;
+    height: auto;
   }
   .btnmenu{
     font-size: 20px;
-    padding:4px 20px;
+    padding:4px 10px;
   }
   .btnmenu img{
     width: 25px;
   }
- 
+  
 }
 /*Inicio para escritorio*/
 @media screen and (min-width:1440px){
 
-  /*---footer----*/
   .btnmenu{
     font-size: 40px;
     padding:10px 20px;
-
+  }
+  .btnmenu img{
+    width: 40px;
   }
   .menu{
     height: 12vh;
   }
+  .dropdown-menu img{
+    width:35px;
+  }
+  .dropdown-menu{
+    font-size: 35px;
+  }
 
+  /*formulario*/
+  .ventana h1{
+    font-size: 80px;
+    margin-top:40px;
+  }
+  .div-form{
+    font-size: 50px;
+  }
+  .row{
+    margin-top: 20px;
+  } 
+  .botonEnviar{
+    margin-top: 30px;
+    width: 500px;
+    font-size: 50px;
+    padding: 20px 40px;
+  }
 }

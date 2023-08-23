@@ -74,9 +74,6 @@
   align-items: center;
 }
 
-
-
-
 /*-------Footer-------*/
 .menu{
   height: 10vh;
@@ -121,7 +118,12 @@ footer .col a img{
   padding-right: 4px;
 }
 
-
+.dropdown-menu img{
+  width:20px;
+}
+.dropdown-menu{
+  font-size: 20px;
+}
 
 /*--------Responsividad--------*/
 /*Inicio para celular*/
@@ -142,7 +144,7 @@ footer .col a img{
   }
   /*---footer----*/
   .menu{
-    height: 15vh;
+    height: auto;
   }
   .btnmenu{
     font-size: 12px;
@@ -151,17 +153,23 @@ footer .col a img{
   .btnmenu img{
     width: 20px;
   }
+  .dropdown-menu img{
+    width:18px;
+  }
+  .dropdown-menu{
+    font-size: 12px;
+  }
 }
 
 /*Inicio para tablet*/
 @media screen and (min-width:768px) and (max-width:992px){
   /*---footer----*/
   .menu{
-    height: 10vh;
+    height: auto;
   }
   .btnmenu{
     font-size: 20px;
-    padding:4px 20px;
+    padding:4px 10px;
   }
   .btnmenu img{
     width: 25px;
@@ -182,10 +190,17 @@ footer .col a img{
   .btnmenu{
     font-size: 40px;
     padding:10px 20px;
-
+  }
+  .btnmenu img{
+    width: 40px;
   }
   .menu{
     height: 12vh;
   }
-
+  .dropdown-menu img{
+    width:35px;
+  }
+  .dropdown-menu{
+    font-size: 35px;
+  }
 }

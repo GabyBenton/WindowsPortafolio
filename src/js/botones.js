@@ -113,7 +113,7 @@ function insert(element,ancla){
     console.log(botones.length);
     console.log(botones);
 
-    if (screen.width < 768){
+    if (screen.width <= 768){
         if(botones.length<=4){
             footer_div.insertAdjacentHTML("afterend",`
         <div class="">    
@@ -126,7 +126,7 @@ function insert(element,ancla){
         `);
         // id++;
         }
-    }else if(screen.width > 768){
+    }else if(screen.width >768){
         if(botones.length<=5){
             footer_div.insertAdjacentHTML("afterend",`
         <div class="">    

@@ -105,8 +105,6 @@
     background-color: black;
 }
 
-
-
 .info{
     padding: 30px 50px;
     font-size: 32px;
@@ -146,3 +144,66 @@
     background-color: rgb(174, 166, 243);
     border-color: #463ab0;
   }
+
+
+
+
+
+  /*--------Responsividad--------*/
+/*Inicio para celular*/
+
+@media screen and (min-width:220px) and (max-width:767px){
+ 
+  /*---footer----*/
+  .menu{
+    height: auto;
+  }
+  .btnmenu{
+    font-size: 12px;
+    padding:2px 5px;
+  }
+  .btnmenu img{
+    width: 20px;
+  }
+  .dropdown-menu img{
+    width:18px;
+  }
+  .dropdown-menu{
+    font-size: 12px;
+  }
+}
+
+/*Inicio para tablet*/
+@media screen and (min-width:768px) and (max-width:992px){
+  /*---footer----*/
+  .menu{
+    height: auto;
+  }
+  .btnmenu{
+    font-size: 20px;
+    padding:4px 10px;
+  }
+  .btnmenu img{
+    width: 25px;
+  }
+ 
+}
+
+/*Inicio para escritorio*/
+@media screen and (min-width:1440px){
+    /*---footer----*/
+  .btnmenu{
+    font-size: 40px;
+    padding:10px 20px;
+
+  }
+  .menu{
+    height: 12vh;
+  }
+  .dropdown-menu img{
+    width:35px;
+  }
+  .dropdown-menu{
+    font-size: 35px;
+  }
+}
