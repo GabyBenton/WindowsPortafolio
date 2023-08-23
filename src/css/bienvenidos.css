@@ -197,6 +197,9 @@
     padding:10px 20px;
 
   }
+  .btnmenu img{
+    width: 40px;
+  }
   .menu{
     height: 12vh;
   }
