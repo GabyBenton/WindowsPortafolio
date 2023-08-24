@@ -119,10 +119,10 @@ footer .col a img{
 }
 
 .dropdown-menu img{
-  width:25px;
+  width:20px;
 }
 .dropdown-menu{
-  font-size: 25px;
+  font-size: 15px;
 }
 
 /*--------Responsividad--------*/
@@ -139,9 +139,9 @@ footer .col a img{
     font-size: 15px;
     width: 45px;
   }
-  .content-inicio .row{
+  /* .content-inicio .row{
     justify-content: center;
-  }
+  } */
   /*---footer----*/
   .menu{
     height: auto;
