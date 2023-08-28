@@ -183,6 +183,12 @@
     width: 200px;
     font-size: 30px;
   }
+  .slide img {
+    height: 500px;
+  }
+  .ventana{
+    height: 100%;
+  }
 }
 
 /*Inicio para tablet*/

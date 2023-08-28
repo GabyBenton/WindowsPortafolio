@@ -5,33 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gaby Benton | Desarrolladora Web</title>
     <!-- Icon -->
-    <link rel="shortcut icon" href="./src/img/ic.png">
+    <link rel="shortcut icon" href="./src/img/2.png">
     <!--Link de Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--Link de Iconos-Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- Font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--Link de Iconos Font-->
     <!--Link de CSS-->
-    <link rel="stylesheet" href="./src/css/Nav.css">
     <link rel="stylesheet" href="./src/css/proyectos.css">
+    <!--Link de JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--Header-->
     <header>
         <!--NavBar-->     
     </header>
-    
-    
+    <!--Pagina inicio, background-->
+    <section class="inicio">
+      <div class="contenido">
+            <div class="superior">
+                <div class="izq col-10">
+                    <a href=""><img src="./src/img/11.png" alt="icono ventana" width="30px"> Proyectos</a>
+                </div>
+                <div class="der col-2">
+                    <a href="./index.html"><button type="button" class="btn btn-superior"><img src="./src/img/equis.png" alt="icono ventana"></button></a>
+                </div>
+            </div>
+            <div class="ventana">
+              <div class="row">
+                  <div class="col col-sm-3">
+                    <nav id="navbar-example3" class="listaProyecto h-100 flex-column align-items-stretch border-end">
+                      <nav class="nav tabs nav-pills flex-column"> 
+                        <a id="a1" class="nav-link" href="#item-1"><img src="./src/img/cerrado.png" alt="html"> Pawsitive Vibes</a>
+                        <a id="a2" class="nav-link" href="#item-2"><img src="./src/img/cerrado.png" alt="javascript"> Centro Comunitario</a>
+                        <a id="a3" class="nav-link" href="#item-3"><img src="./src/img/cerrado.png" alt="css"> Calculadora</a>
+                        <a id="a4" class="nav-link" href="#item-4"><img src="./src/img/cerrado.png" alt="java"> ...</a>
+                      </nav>
+                    </nav>
+                  </div>
+                
+                  <div class="col col-sm-9">
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class=" info scrollspy-example-2" tabindex="0">
+                      <article id="item-1">
+                        <h4><img src="./src/img/logopv.png" alt="css"> Pawsitive Vibes</h4>
+                        <h5>-Descripción del Proyecto:</h5>
+                        <p>Pawsitive Vibes es una tienda en línea dedicada al bienestar de las mascotas, donde ofrecemos una amplia gama de productos seleccionados cuidadosamente para nuestros amigos peludos. Nuestro equipo de profesionales se compromete a brindar una experiencia de compra inolvidable a través de una plataforma que prioriza la felicidad y el bienestar animal.</p>
+                        <h5>-Diseño y Estilo:</h5>
+                        <p>Pawsitive Vibes se distingue por su diseño minimalista y acogedor, que resalta la esencia de la marca. Utilizando la herramienta de diseño Figma, creamos una interfaz visualmente atractiva y fácil de usar. Cada elemento visual se ha seleccionado meticulosamente para transmitir nuestra pasión por los animales y resaltar la gama de productos. El diseño elegante se combina con Bootstrap para lograr una experiencia responsiva y uniforme en todos los dispositivos, manteniendo el enfoque en los productos y la comodidad del usuario.</p>
+                        <h5>-Herramientas Utilizadas:</h5>
+                        <p>Nuestra plataforma Pawsitive Vibes se ha construido con una combinación de tecnologías robustas y líderes en la industria. HTML y CSS son la base de nuestro diseño, mientras que Bootstrap proporciona la estructura para una experiencia responsiva y estéticamente agradable. Utilizamos JavaScript para agregar interactividad y funcionalidad dinámica a la plataforma. La gestión de la base de datos se realiza a través de SQL, asegurando la seguridad y disponibilidad de la información crítica. Para una gestión eficiente de tareas y proyectos, adoptamos la metodología Scrum y utilizamos Jira como herramienta principal de organización.</p>
+                        <div class="justify-content-center d-flex mb-3">
+                          <div class="btn-group" role="group" aria-label="Basic mixed styles example"> 
+                            <button type="button" class=" btnlink btn "><a href="https://github.com/AdonisB1219/PawsitiveVibes-Front/tree/develop"><img src="./src/img/github.png" alt=""> Código</a></button>                        
+                            <button type="button" class="btnlink btn "><a href="https://adonisb1219.github.io/PawsitiveVibes-Front/"><img src="./src/img/laptop.png" alt=""> Página</a></button>
+                          </div>
+                        </div>
+                      </article>
+                      <article id="item-2">
+                        <h4><img src="./src/img/logoch.png" alt="proyecto"> Centro Comunitario</h4>
+                        <h5>-Descripción del Proyecto:</h5>
+                        <p>En mi proyecto web, diseñé y desarrollé desde cero una página web completa para el Centro Comunitario CH29. Esta página web tiene como objetivo ofrecer una plataforma en línea que proporcione información detallada sobre los servicios y actividades que ofrece el centro para jóvenes interesados en su crecimiento personal, laboral y académico.</p>
+                        <!-- <div class="scroll-container">
+                          <img src="./src/img/ch1.png" alt="Cinque Terre" width="400" height="200">
+                          <img src="./src/img/ch2.png" alt="Forest" width="400" height="200">
+                          <img src="./src/img/ch3.png" alt="Northern Lights" width="400" height="200">
+                          <img src="./src/img/ch4.png" alt="Mountains" width="400" height="200">
+                        </div> -->
+                        <h5>-Diseño y Estilo:</h5>
+                        <p>El diseño de la página web se caracteriza por su enfoque limpio y atractivo. Utilicé una combinación de colores sencillos pero vibrantes, como el blanco y el durazno, para transmitir una sensación de frescura y vitalidad. Además, incorporé animaciones de CSS para agregar interactividad y dinamismo a la experiencia del usuario.</p>
+                        <h5>-Herramientas Utilizadas:</h5>
+                        <p>Para llevar a cabo este proyecto, utilicé un enfoque combinado de HTML y CSS para estructurar y diseñar la página web. Utilicé HTML para crear la estructura de las diferentes secciones y páginas, y luego empleé CSS para dar estilo y formato a la página, incluyendo colores, fuentes y animaciones.</p>
+                      <div class="justify-content-center d-flex mb-3">
+                        <div class="btn-group" role="group" aria-label="Basic mixed styles example"> 
+                          <button type="button" class=" btnlink btn "><a href="https://github.com/GabyBenton/CentroComunitario"><img src="./src/img/github.png" alt=""> Código</a></button>                        
+                          <button type="button" class="btnlink btn "><a href="https://ch29centro.netlify.app/"><img src="./src/img/laptop.png" alt=""> Página</a></button>
+                        </div>
+                      </div>
+                      </article>
+                      <article id="item-3">
+                        <h4><img src="./src/img/calcu.png" alt="css"> Calculadora</h4>
+                        <p>Mi mente fluye y se deja ir cuando pongo en práctica las hojas de estilos, habilidad que se me facilita e impulsa mi creatividad. 
+                        Pinto, iluminó y doy vida al código con solo unos clics.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique inventore deserunt ab ut laborum dolore quo, itaque voluptatem assumenda sed velit iste, ad corrupti iusto quos id incidunt fugit porro!</p>
+                      </article>
+                      <article id="item-4">
+                        <h4><img src="./src/img/cerrado.png" alt="proyecto"> ...</h4>
+                        <h5>-Descripción del Proyecto:</h5>
+                        <p>En mi proyecto web, diseñé y desarrollé desde cero una página web completa para el Centro Comunitario CH29. Esta página web tiene como objetivo ofrecer una plataforma en línea que proporcione información detallada sobre los servicios y actividades que ofrece el centro para jóvenes interesados en su crecimiento personal, laboral y académico.</p>
+                      </article>
+                      <br>
+                      <br>   
+                    </div>
+                  </div>
+                </div>
+          </div> <!--Div ventana-->  
+          </div><!--Div contenido-->       
+        </section><!--Seccion inicio-->
+
     <!--Footer-->
     <footer>
-
+      <div class="menu">
+          <div id="footer-div" class="">
+            <!-- <button type="button" class="btnmenu"><img src="./src/img/2.png" alt="icono" width="25px"> Start</button> -->
+            <div class="dropup-center dropup">
+              <button id="boton" class="btn btnmenu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./src/img/2.png" alt="icono" width="25px"> Start
+              </button>
+              <ul class="dropdown-menu">
+                <li><a id="link1" class="dropdown-item" href="#"><img id="img1" src="./src/img/12.png" alt="icono" > Bienvenidos!</a></li>
+                <li><a id="link2" class="dropdown-item" href="#"><img id="img2" src="./src/img/6.png" alt="icono"> Sobre mí</a></li>
+                <li><a id="link3" class="dropdown-item" href="#"><img id="img3" src="./src/img/1.png" alt="icono"> Habilidades Técnicas</a></li>
+                <li><a id="link4" class="dropdown-item" href="#"><img id="img4" src="./src/img/3.png" alt="icono"> Habilidades Blandas</a></li>
+                <li><a id="link5" class="dropdown-item" href="#"><img id="img5" src="./src/img/11.png" alt="icono"> Mis proyectos</a></li>
+                <li><a id="link6" class="dropdown-item" href="#"><img id="img6" src="./src/img/5.png" alt="icono" > Galería</a></li>
+                <li><a id="link7" class="dropdown-item" href="#"><img id="img7" src="./src/img/explor.png" alt="icono" > Mi experiencia</a></li>
+                <li><a id="link8" class="dropdown-item" href="#"><img id="img8" src="./src/img/10.png" alt="icono" > Contacto</a></li>
+                <li><a id="link9" class="dropdown-item" href="#"><img id="img9" src="./src/img/9.png" alt="icono"> Game</a></li>
+                <li><a id="link10" class="dropdown-item" href=""><img id="img10" src="./src/img/github.png" alt="icono"> Github</a></li>
+                <li><a id="link11" class="dropdown-item" href=""><img id="img11" src="./src/img/lin.png" alt="icono" > LinkedIn</a></li>
+                <li><a id="link12" class="dropdown-item" href="#"><img id="img12" src="./src/img/correo.png" alt="icono" > Gmail</a></li>
+              </ul>
+            </div>
+          </div><!--div footerdiv -->
+      </div><!--div menu-->
     </footer>
+    <!--Script Botones-links-->
+    <script src="./src/js/botones.js"></script>
+    <!--Script Botones-links-->
+    <script src="./src/js/proyectos.js"></script>
 
-    <!--Script NavBar-->
-    <script src="./src/js/nav.js"></script>
     <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
   </body>
 </html>

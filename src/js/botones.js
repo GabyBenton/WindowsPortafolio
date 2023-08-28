@@ -171,6 +171,12 @@ function creaVinculo(ancla){
         return "./contacto.html"
      }else if(ancla==link9){
         return "./game.html"
+     }else if(ancla==link10){
+        return "https://github.com/GabyBenton"
+     }else if(ancla==link11){
+        return "https://www.linkedin.com/in/gaby-benton/"
+     }else if(ancla==link12){
+        return "mailto:adrianach40@gmail.com"
      }
     
 }

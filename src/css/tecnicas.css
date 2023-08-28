@@ -106,7 +106,7 @@
     margin: 0;
 }
 
-.listaTecnicas{
+.listaTecnicas{ 
     position: fixed;
     margin-top: 10px;
     margin-left: 10px;
@@ -126,17 +126,20 @@
 
 .tecnicas{
     margin-top: 20px;
-    margin-left: 10px;
 }
 
 .tecnicas h4 img{
   width: 30px;
 }
 
-
+.tecnicas p{
+  font-size: 20px;
+}
 .nav-pills .nav-link.active{
   background-color: #6e4abf8c;
 }
+
+
 /*-------Footer---------*/
 .menu{
   height: 10vh;
@@ -182,7 +185,14 @@
 /*Inicio para celular*/
 
 @media screen and (min-width:220px) and (max-width:767px){
-
+  /*--- tecnicas----*/
+  .listaTecnicas a {
+    font-size: 15px;
+  } 
+  /*------menú superior-----*/
+  .izq a{
+    font-size: 24px;
+  }
   /*---footer----*/
   .menu{
     height: auto;
@@ -205,6 +215,15 @@
 
 /*Inicio para tablet*/
 @media screen and (min-width:768px) and (max-width:992px){
+   /*--- tecnicas----*/
+   .listaTecnicas a {
+    font-size: 15px;
+  } 
+  /*------menú superior-----*/
+  .izq a{
+    font-size: 24px;
+  }
+
    /*---footer----*/
   .menu{
     height: auto;
@@ -220,7 +239,22 @@
 }
 /*Inicio para escritorio*/
 @media screen and (min-width:1440px){
+ /*--- tecnicas----*/
+ .listaTecnicas a {
+  font-size: 30px;
+} 
+.tecnicas h4 {
+  font-size: 40px;
+}
+.tecnicas h4 img{
+  width: 40px;
+}
+/*------menú superior-----*/
+.izq a{
+  font-size: 30px;
+}
 
+/*---footer----*/
   .btnmenu{
     font-size: 40px;
     padding:10px 20px;
