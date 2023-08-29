@@ -13,7 +13,7 @@
 
 /*Pagina inicio, background*/
 .inicio{
-  min-height: 450px;
+  min-height: 510px;
   height: 100vh;
   display: flex;
   background-position: center;
@@ -161,47 +161,56 @@ div.scroll-container img {
 
 
 
-/*-------Footer---------*/
+/*-------Footer-------*/
 .menu{
-    height: 10vh;
-    width: 100%;
-    background-color: #654cc6;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    position: fixed;
-    z-index: 100;
-    bottom: 0px;
-  }
-  
-  /*boton footer*/
-  .btnmenu{
-    /* border: 2px solid rgb(128, 41, 234); */
-    box-shadow: 2px 2px 2px 2px rgba(78, 34, 255, 0.4);
-    background-color: rgb(160, 150, 245);
-    font-size: 22px;
-    border-color: #5546dc;
-    border-radius: 6px;
-    margin: 5px;
-    padding:4px 20px;
-  }
-  .dropdown-menu img{
-    width:20px;
-  }
-  .dropdown-menu{
-    font-size: 15px;
-  }
-  .btnmenu a{
-    text-decoration: none;
-    color: black;
-  }
-  .btnmenu:hover{
-    background-color: rgb(174, 166, 243);
-    border-color: #463ab0;
-  }
+  height: 10vh;
+  width: 100%;
+  background-color: #654cc6;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  z-index: 100;
+  bottom: 0px;
+ 
+}
 
+/*boton footer*/
+.btnmenu{
+  /* border: 2px solid rgb(128, 41, 234); */
+  box-shadow: 2px 2px 2px 2px rgb(39 20 112 / 65%);
+  background-color: rgb(160, 150, 245);
+  font-size: 22px;
+  border-color: #5546dc;
+  border-radius: 6px;
+  margin: 5px;
+  padding:4px 20px;
+}
 
+.btnmenu a{
+  text-decoration: none;
+  color: black;
+}
 
+.btnmenu:hover{
+  background-color: rgb(174, 166, 243);
+  border-color: #463ab0;
+}
+
+footer .col a{
+  color: black;
+}
+
+footer .col a img{
+  padding-right: 4px;
+}
+
+.dropdown-menu img{
+  width:20px;
+}
+.dropdown-menu{
+  font-size: 15px;
+}
 
 
  /*--------Responsividad--------*/
@@ -262,15 +271,15 @@ div.scroll-container img {
   .btnmenu img{
     width: 25px;
   }
-  .ventana{
+  /* .ventana{
     height: 100%;
-  }
+  } */
 }
 
 @media screen and (min-width:992px) and (max-width:1440px){
-  .ventana{
+  /* .ventana{
     height: 100%;
-  }
+  } */
 }  
 
 /*Inicio para escritorio*/
@@ -294,16 +303,16 @@ div.scroll-container img {
   font-size: 30px;
 }
 
-/*---footer----*/
+    /*---footer----*/
   .btnmenu{
-    font-size: 40px;
-    padding:10px 20px;
+    font-size: 30px;
+    padding:8px 10px;
   }
   .btnmenu img{
     width: 40px;
   }
   .menu{
-    height: 12vh;
+    height: auto;
   }
   .dropdown-menu img{
     width:35px;

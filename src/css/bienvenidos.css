@@ -13,7 +13,7 @@
 
 /*Pagina inicio, background*/
 .inicio{
-  min-height: 450px;
+  min-height: 510px;
   height: 100vh;
   display: flex;
   background-position: center;
@@ -133,7 +133,13 @@
     background-color: rgb(174, 166, 243);
     border-color: #463ab0;
   }
-
+  footer .col a{
+    color: black;
+  }
+  
+  footer .col a img{
+    padding-right: 4px;
+  }
 
 
 
@@ -143,8 +149,8 @@
 
 @media screen and (min-width:220px) and (max-width:767px){
  
-  /*---footer----*/
-  .menu{
+   /*---footer----*/
+   .menu{
     height: auto;
   }
   .btnmenu{
@@ -180,24 +186,28 @@
 
 /*Inicio para escritorio*/
 @media screen and (min-width:1440px){
-    /*---footer----*/
-  .btnmenu{
-    font-size: 40px;
-    padding:10px 20px;
 
-  }
-  .btnmenu img{
-    width: 40px;
-  }
-  .menu{
-    height: 12vh;
-  }
-  .dropdown-menu{
-    font-size: 35px;
-  }
-  .dropdown-menu img{
-    width: 35px;
-  }
+    .ventana{
+      height: 100%;
+    }
+
+    /*---footer----*/
+    .btnmenu{
+      font-size: 30px;
+      padding:8px 10px;
+    }
+    .btnmenu img{
+      width: 40px;
+    }
+    .menu{
+      height: auto;
+    }
+    .dropdown-menu img{
+      width:35px;
+    }
+    .dropdown-menu{
+      font-size: 35px;
+    }
   
   
 }

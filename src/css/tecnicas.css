@@ -11,7 +11,7 @@
 
 /*Pagina inicio, background*/
 .inicio{
-  min-height: 450px;
+  min-height: 510px;
   height: 100vh;
   display: flex;
   background-position: center;
@@ -36,7 +36,8 @@
 
 .content-inicio{
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 0;
   margin-right: 0;
   justify-content: center;
@@ -140,7 +141,7 @@
 }
 
 
-/*-------Footer---------*/
+/*-------Footer-------*/
 .menu{
   height: 10vh;
   width: 100%;
@@ -151,12 +152,13 @@
   position: fixed;
   z-index: 100;
   bottom: 0px;
+ 
 }
 
 /*boton footer*/
 .btnmenu{
   /* border: 2px solid rgb(128, 41, 234); */
-  box-shadow: 2px 2px 2px 2px rgba(78, 34, 255, 0.4);
+  box-shadow: 2px 2px 2px 2px rgb(39 20 112 / 65%);
   background-color: rgb(160, 150, 245);
   font-size: 22px;
   border-color: #5546dc;
@@ -164,19 +166,30 @@
   margin: 5px;
   padding:4px 20px;
 }
+
+.btnmenu a{
+  text-decoration: none;
+  color: black;
+}
+
+.btnmenu:hover{
+  background-color: rgb(174, 166, 243);
+  border-color: #463ab0;
+}
+
+footer .col a{
+  color: black;
+}
+
+footer .col a img{
+  padding-right: 4px;
+}
+
 .dropdown-menu img{
   width:20px;
 }
 .dropdown-menu{
   font-size: 15px;
-}
-.btnmenu a{
-  text-decoration: none;
-  color: black;
-}
-.btnmenu:hover{
-  background-color: rgb(174, 166, 243);
-  border-color: #463ab0;
 }
 
 
@@ -254,16 +267,16 @@
   font-size: 30px;
 }
 
-/*---footer----*/
+ /*---footer----*/
   .btnmenu{
-    font-size: 40px;
-    padding:10px 20px;
+    font-size: 30px;
+    padding:8px 10px;
   }
   .btnmenu img{
     width: 40px;
   }
   .menu{
-    height: 12vh;
+    height: auto;
   }
   .dropdown-menu img{
     width:35px;
