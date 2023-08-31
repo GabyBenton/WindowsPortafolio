@@ -273,7 +273,11 @@ footer .col a img{
     font-size: 50px;
     padding: 20px 40px;
   }
+  
+}
+
+@media screen and (min-width:2000px){
   .ventana{
     height: 100%;
   }
-}
+}  

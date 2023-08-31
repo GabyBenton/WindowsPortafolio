@@ -95,35 +95,20 @@
 }
 
 .ventana{
+    height: 100%;
   position: absolute;
   top: 43px;
   width: 100%;
   border: 5px solid #654cc6;
-  background-color: #ffffff;
+  background-color: #a590f9;
 }
 
-/*-------Sobre mi-------*/
+/*---cv----*/
 
-.informacion{
-    margin: 35px 40px;
-    text-align: justify;
-}
-
-.informacion img{
-    width: 170px;
-    
-}
-.informacion p{
-    font-size: 20px;
-}
-
-.imgcenter{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+iframe{
+    height: 90%;
+  }
+  
 
 /*-------Footer---------*/
 .menu{
@@ -182,9 +167,6 @@ footer .col a img{
 
 @media screen and (min-width:220px) and (max-width:767px){
 
-.informacion p{
-    font-size: 15px;
-} 
   /*---footer----*/
   .menu{
     height: auto;
@@ -201,14 +183,6 @@ footer .col a img{
   }
   .dropdown-menu{
     font-size: 12px;
-  }
-/*formulario*/
-  .div-form{
-    font-size: 20px;
-  }  
-  .botonEnviar{
-    width: 200px;
-    font-size: 30px;
   }
 }
 
@@ -245,14 +219,6 @@ footer .col a img{
   }
   .dropdown-menu{
     font-size: 35px;
-  }
-
-  /*----ventana---*/
-  .informacion p{
-    font-size: 25px;
-  }
+  } 
   
-  .ventana{
-    height: 100%;
-  }
 }
